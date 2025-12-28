@@ -4,13 +4,31 @@
   "description": "极简风格静态个人主页",
   "main": "dist/index.html",
   "scripts": {
+    "build": "webpack --mode production",
     "dev": "npx wrangler pages dev dist",
     "deploy": "npx wrangler pages deploy dist"
   },
-  "keywords": ["personal", "homepage", "static"],
+  "keywords": [
+    "personal",
+    "homepage",
+    "static"
+  ],
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
     "wrangler": "^4.0.1"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   }
 }
