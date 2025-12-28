@@ -51,8 +51,6 @@ npm install
 npm run dev
 ```
 
-启动本地开发服务器，访问 http://localhost:8788 查看页面。
-
 ### 构建项目
 
 ```bash
