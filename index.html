@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动物园邮局 - 慢信平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🐒📮 动物园邮局</h1>
+        <p>体验慢节奏的交流乐趣</p>
+    </header>
+
+    <main>
+        <section id="zoo-map">
+            <h2>选择你的邮局入口</h2>
+            <div class="animal-options">
+                <div class="animal" data-animal="turtle">
+                    <span class="emoji">🐢</span>
+                    <p>乌龟邮差 - 慢节奏（7天）</p>
+                </div>
+                <div class="animal" data-animal="owl">
+                    <span class="emoji">🦉</span>
+                    <p>猫头鹰邮差 - 夜间送达（3天）</p>
+                </div>
+                <div class="animal" data-animal="rabbit">
+                    <span class="emoji">🐇</span>
+                    <p>兔子邮差 - 快速（1天）</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="write-letter" style="display: none;">
+            <h2>写一封慢信</h2>
+            <form id="letter-form">
+                <label for="recipient">收件人邮箱：</label>
+                <input type="email" id="recipient" required>
+
+                <label for="message">信件内容：</label>
+                <textarea id="message" rows="10" placeholder="写下你的慢信..." required></textarea>
+
+                <label>发送方式：</label>
+                <div id="send-options">
+                    <label>
+                        <input type="radio" name="send-type" value="delayed" checked>
+                        延迟发送（慢信）
+                    </label>
+                    <label>
+                        <input type="radio" name="send-type" value="immediate">
+                        立即发送（邮件推送）
+                    </label>
+                </div>
+
+                <div id="delay-options">
+                    <label for="delay">延迟时间：</label>
+                    <select id="delay">
+                        <option value="1">1天</option>
+                        <option value="3">3天</option>
+                        <option value="7">7天</option>
+                    </select>
+                </div>
+
+                <button type="submit">投递信件</button>
+            </form>
+        </section>
+
+        <section id="received-letters" style="display: none;">
+            <h2>收到的信件</h2>
+            <div id="letters-list"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
