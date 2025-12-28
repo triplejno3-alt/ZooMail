@@ -1,7 +1,7 @@
 {
   "name": "zoomail",
   "version": "1.0.0",
-  "description": "极简风格静态个人主页",
+  "description": "极简风格动态个人主页",
   "main": "dist/index.html",
   "scripts": {
     "build": "webpack --mode production",

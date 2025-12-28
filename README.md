@@ -22,8 +22,7 @@ ZooMail/
 ├── dist/                  # 构建输出目录
 │   ├── index.html         # HTML入口文件
 │   ├── bundle.js          # 打包后的JavaScript
-│   ├── style.css          # 样式文件
-│   └── script.js          # 旧版脚本（保留）
+│   └── style.css          # 样式文件
 ├── node_modules/          # 依赖包
 ├── package.json           # 项目配置和依赖
 ├── webpack.config.js      # Webpack配置
