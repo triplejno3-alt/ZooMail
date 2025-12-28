@@ -1,0 +1,16 @@
+{
+  "name": "zoomail",
+  "version": "1.0.0",
+  "description": "极简风格静态个人主页",
+  "main": "dist/index.html",
+  "scripts": {
+    "dev": "npx wrangler pages dev dist",
+    "deploy": "npx wrangler pages deploy dist"
+  },
+  "keywords": ["personal", "homepage", "static"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

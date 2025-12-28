@@ -1,0 +1,5 @@
+name = "zoomail"
+compatibility_date = "2023-01-01"
+
+[pages]
+build_output_dir = "dist"
